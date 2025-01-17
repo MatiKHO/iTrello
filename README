@@ -1,1 +1,32 @@
-Este es un readme de prueba
+Estructura del proyecto:
+
+└── 📁prisma
+    └── 📁migrations
+        └── 📁20250115180721_i_t_data_base
+            └── migration.sql
+        └── migration_lock.toml
+    └── schema.prisma
+└── 📁public
+    └── style.css
+└── 📁src
+    └── 📁config
+        └── passport.js
+        └── prisma.js
+        └── server.js
+    └── 📁middlewares
+        └── ensureAuth.js
+        └── errorHandler.js
+    └── 📁routes
+        └── authRoutes.js
+        └── boardRoutes.js
+        └── indexRoutes.js
+    └── 📁views
+        └── boards.hbs
+        └── home.hbs
+        └── 📁layouts
+            └── main.hbs
+        └── lists.hbs
+        └── login.hbs
+        └── register.hbs
+    └── app.js
+
