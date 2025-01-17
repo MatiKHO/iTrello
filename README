@@ -1,5 +1,27 @@
-Estructura del proyecto:
+## NOMBRE DEL PROYECTO ## 
 
+El nombre del proyecto es "iTrello", siendo este una referencia a su origen, 
+pero implementado en otro entorno de desarrollo.
+
+
+## DESCRIPCIÓN DEL PROYECTO ## 
+
+El proyecto es un clon de la aplicación de gestión de tareas "Trello", 
+pero adaptado con Express, Prisma y Handlebars para el backend, 
+generación de modelos de usuarios y tablas,
+y la vista de las diferentes rutas.
+
+Se trata entonces, de un gestor de tareas, 
+autenticación de usuarios, edición, creación y 
+eliminación de posts, comentarios y tareas.
+
+## ESTRUCTURA DEL PROYECTO ##
+
+└── 📁__tests__
+    └── isAdmin.test.js
+    └── isAuthenticated.test.js
+└── 📁bin
+    └── www
 └── 📁prisma
     └── 📁migrations
         └── 📁20250115180721_i_t_data_base
@@ -10,23 +32,35 @@ Estructura del proyecto:
     └── style.css
 └── 📁src
     └── 📁config
+        └── cloudinary.js
+        └── multer.js
+        └── nodemailer.js
         └── passport.js
         └── prisma.js
-        └── server.js
+        └── swagger.js
     └── 📁middlewares
+        └── ensureAdmin.js
         └── ensureAuth.js
-        └── errorHandler.js
+        └── handleUpload.js
     └── 📁routes
-        └── authRoutes.js
-        └── boardRoutes.js
-        └── indexRoutes.js
+        └── admin.js
+        └── auth.js
+        └── index.js
+    └── 📁utils
+        └── helpers.js
     └── 📁views
-        └── boards.hbs
-        └── home.hbs
+        └── admin.hbs
+        └── error.hbs
+        └── index.hbs
         └── 📁layouts
             └── main.hbs
-        └── lists.hbs
         └── login.hbs
+        └── 📁partials
+        └── profile.hbs
         └── register.hbs
     └── app.js
-
+└──.env.dist
+└──.gitignore
+└──package-lock.json
+└──package.json
+└──README
